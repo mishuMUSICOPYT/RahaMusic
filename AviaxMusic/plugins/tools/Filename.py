@@ -310,7 +310,7 @@ async def mentionall(client, message):
             usr.user.id, usr.user.first_name
         )
 
-        if usrnum == 1:
+        if usrnum == 0:
             if mode == "text_on_cmd":
                 txt = f"{usrtxt} {random.choice(TAGMES)}"
                 await client.send_message(chat_id, txt)
