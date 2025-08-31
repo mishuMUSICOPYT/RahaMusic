@@ -3,8 +3,8 @@ import asyncio
 
 from pyrogram import filters
 
-from aviaxmusic import app
-from aviaxmusic.utils.branded_ban import admin_filter
+from dotenv import app
+from dotenv.utils.branded_ban import admin_filter
 
 SPAM_CHATS = []
 
@@ -103,7 +103,7 @@ from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus, ChatType
 from pyrogram.errors import UserNotParticipant
 
-from aviax import app
+from dotenv import app
 
 spam_chats = []
 
