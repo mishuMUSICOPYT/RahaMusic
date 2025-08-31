@@ -94,7 +94,6 @@ async def cancelcmd(_, message):
     else:
         await message.reply_text("ɴᴏ ᴘʀᴏᴄᴇss ᴏɴɢᴏɪɴɢ!")
         return
-
 import asyncio
 import random
 
@@ -198,8 +197,7 @@ TAGMES = [
     " 𝐌𝐞𝐫𝐚 𝐄𝐤 𝐊𝐚𝐚𝐦 𝐊𝐚𝐫 𝐃𝐨𝐠𝐞..? ",
     " 𝐁𝐲 𝐓𝐚𝐭𝐚 𝐌𝐚𝐭 𝐁𝐚𝐭 𝐊𝐚𝐫𝐧𝐚 𝐀𝐚𝐣 𝐊𝐞 𝐁𝐚𝐝😠 ",
     " 𝐌𝐨𝐦 𝐃𝐚𝐝 𝐊𝐚𝐢𝐬𝐞 𝐇𝐚𝐢𝐧..?❤ ",
-
-" 𝐊𝐲𝐚 𝐇𝐮𝐚..?👱 ",
+    " 𝐊𝐲𝐚 𝐇𝐮𝐚..?👱 ",
     " 𝐁𝐨𝐡𝐨𝐭 𝐘𝐚𝐚𝐝 𝐀𝐚 𝐑𝐡𝐢 𝐇𝐚𝐢 🤧❣️ ",
     " 𝐁𝐡𝐮𝐥 𝐆𝐲𝐞 𝐌𝐮𝐣𝐡𝐞😏😏 ",
     " 𝐉𝐮𝐭𝐡 𝐍𝐡𝐢 𝐁𝐨𝐥𝐧𝐚 𝐂𝐡𝐚𝐡𝐢𝐲𝐞🤐 ",
@@ -281,7 +279,7 @@ async def mentionall(client, message):
         )
     elif message.text:
     mode = "text_on_cmd"
-    msg = message.text
+        msg = message.text
     elif message.reply_to_message:
         mode = "text_on_reply"
         msg = message.reply_to_message
@@ -321,8 +319,6 @@ async def mentionall(client, message):
         spam_chats.remove(chat_id)
     except:
         pass
-
-
 @app.on_message(filters.command(["tagoff", "tagstop", "cancel"]))
 async def cancel_spam(client, message):
     if not message.chat.id in spam_chats:
