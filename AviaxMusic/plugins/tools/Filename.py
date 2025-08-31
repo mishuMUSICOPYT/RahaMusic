@@ -3,8 +3,8 @@ import asyncio
 
 from pyrogram import filters
 
-from alexamuc import app
-from alexamuc.utils.branded_ban import admin_filter
+from AviaxMusic import app
+from AviaxMusic.utils.branded_ban import admin_filter
 
 SPAM_CHATS = []
 
@@ -103,7 +103,7 @@ from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus, ChatType
 from pyrogram.errors import UserNotParticipant
 
-from alexamuc import app
+from AviaxMusic import app
 
 spam_chats = []
 
