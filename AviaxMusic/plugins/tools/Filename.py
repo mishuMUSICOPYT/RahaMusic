@@ -1,4 +1,3 @@
-𝘴ʜꪖ𝐝ꪮ𝐰 × ᴊɪɴᴡᴏo:
 import asyncio
 
 from pyrogram import filters
