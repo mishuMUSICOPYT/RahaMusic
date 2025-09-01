@@ -278,7 +278,7 @@ async def mentionall(client, message):
             "/tagall  𝐓𝐲𝐩𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬 / 𝐑𝐞𝐩𝐥𝐲 𝐀𝐧𝐲 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐍𝐞𝐱𝐭 𝐓𝐢𝐦𝐞 "
         )
     elif message.text:
-mode = "text_on_cmd"
+        mode = "text_on_cmd"
         msg = message.text
     elif message.reply_to_message:
         mode = "text_on_reply"
