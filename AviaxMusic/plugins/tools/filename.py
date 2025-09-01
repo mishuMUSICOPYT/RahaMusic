@@ -2,7 +2,7 @@ import asyncio
 
 from pyrogram import filters
 
-from AviaxMusivc import app
+from AviaxMusic import app
 from AviaxMusic.utils.branded_ban import admin_filter
 
 SPAM_CHATS = []
