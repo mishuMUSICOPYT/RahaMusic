@@ -4,8 +4,8 @@ from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import UserNotParticipant, FloodWait
 from pyrogram.types import Message
 
-from Aviaxmusic import app
-from Aviaxmusic.utils.admin_filters import admin_filter
+from AviaxMusic import app
+from AviaxMusic.utils.admin_filters import admin_filter
 
 spam_chats = set()
 
