@@ -3,7 +3,7 @@ import random
 from pyrogram import filters
 from pyrogram.enums import ChatType
 from pyrogram.errors import FloodWait
-from Aviaxmusic import app
+from pytgcalls import app
 from Aviaxmusic.utils.admin_check import is_admin
 from Aviaxmusic.plugins.misc.funtag_messages import (
     GN_MESSAGES,
