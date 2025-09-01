@@ -3,9 +3,9 @@ import random
 from pyrogram import filters
 from pyrogram.enums import ChatType
 from pyrogram.errors import FloodWait
-from Aviaxmusic import app
-from Aviaxmusic.utils.admin_check import is_admin
-from Aviaxmusic.plugins.misc.funtag_messages import (
+from AviaxMusic import app
+from AviaxMusic.utils.admin_check import is_admin
+from AviaxMusic.plugins.misc.funtag_messages import (
     GN_MESSAGES,
     GM_MESSAGES,
     HI_MESSAGES,
