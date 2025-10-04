@@ -93,4 +93,4 @@ async def cancelcmd(_, message):
 
     else:
         await message.reply_text("ɴᴏ ᴘʀᴏᴄᴇss ᴏɴɢᴏɪɴɢ!")
-        return/all {msg}
+        return all {msg}
