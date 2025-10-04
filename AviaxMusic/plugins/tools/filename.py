@@ -22,7 +22,7 @@ async def tag_all_users(_, message):
         return
     if replied:
         SPAM_CHATS.append(message.chat.id)
-        usernum = 0
+        usernum = 1
         usertxt = ""
         async for m in app.get_chat_members(message.chat.id):
             if message.chat.id not in SPAM_CHATS:
@@ -32,7 +32,7 @@ async def tag_all_users(_, message):
             if usernum == 5:
                 await replied.reply_text(usertxt)
                 await asyncio.sleep(2)
-                usernum = 0
+                usernum = 1
                 usertxt = ""
         try:
             SPAM_CHATS.remove(message.chat.id)
@@ -42,7 +42,7 @@ async def tag_all_users(_, message):
         text = message.text.split(None, 1)[1]
 
         SPAM_CHATS.append(message.chat.id)
-        usernum = 0
+        usernum = 1
         usertxt = ""
         async for m in app.get_chat_members(message.chat.id):
             if message.chat.id not in SPAM_CHATS:
@@ -55,7 +55,7 @@ async def tag_all_users(_, message):
                     f"{text}\n{usertxt}\n\n ➥ ᴏғғ ᴛᴀɢɢɪɴɢ ʙʏ » /cancel ",
                 )
                 await asyncio.sleep(2)
-                usernum = 0
+                usernum = 1
                 usertxt = ""
         try:
             SPAM_CHATS.remove(message.chat.id)
