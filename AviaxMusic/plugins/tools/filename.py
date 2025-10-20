@@ -4,8 +4,8 @@ from pyrogram import Client, filters
 from pyrogram.enums import ChatType, ChatMemberStatus
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import ChatPermissions
-from RessoMusic import app
-from RessoMusic.utils.branded_ban import admin_filter
+from AviaxMusic import app
+from AviaxMusic.utils.branded_ban import admin_filter
 
 
 SPAM_CHATS = []
